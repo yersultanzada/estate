@@ -792,7 +792,27 @@ label.error {
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
 }
-
+.contact-form__preloader {
+  height: 2px;
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  opacity: 0;
+}
+.contact-form__preloader:before {
+  background: mediumturquoise;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  -webkit-animation: smartlidPreloader 3s infinite;
+  animation: smartlidPreloader 3s infinite;
+}
+.g-form__input-wrapper_hidden {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .header-line .container {
     -webkit-box-orient: vertical;
@@ -895,5 +915,22 @@ label.error {
     background-size: 100% 100%;
   }
 }
+@-webkit-keyframes smartlidPreloader {
+  0% {
+    left: 0; }
+  50% {
+    left: -webkit-calc(100% - 50px);
+    left: calc(100% - 50px); }
+  100% {
+    left: 0%; }
+}
 
-/*# sourceMappingURL=style.css.map */
+@keyframes smartlidPreloader {
+  0% {
+    left: 0; }
+  50% {
+    left: -webkit-calc(100% - 50px);
+    left: calc(100% - 50px); }
+  100% {
+    left: 0%; }
+}

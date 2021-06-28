@@ -47,7 +47,7 @@ $(document).ready(function() {
 	// 	// console.log('call');
 	// }
 
-	$('input[name="tel"]').mask('+7 (799) 999-99-99');
+	$('input[type="tel"]').mask('+7 (799) 999-99-99');
 
 /*	$('.step-slide__title').each(function(index, el) {
 		$(el).prepend('<div class="step-slide__title-counter">' + (index + 1) + '</div>');
@@ -122,13 +122,13 @@ $(document).ready(function() {
 
 
 
-	$('form').each(function(index, el) {
+	/*$('form').each(function(index, el) {
 		$(el).validate({
 			rules:{
 				"name":{ required:true },
 				"tel":{ required:true }
 			},
-			/*submitHandler: function(form){
+			/!*submitHandler: function(form){
 				$(form).ajaxSubmit({
 					type: 'POST',
 					url: './mail/php/mail.php',
@@ -138,7 +138,7 @@ $(document).ready(function() {
 						$('.progress-line').slideUp(300);
 					}
 				});
-			}*/
+			}*!/
 		});
-	});
+	});*/
 });

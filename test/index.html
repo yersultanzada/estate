@@ -7,12 +7,12 @@
 	<script src="libs/jquery-3.2.1.min.js"></script>
 	<script src="libs/jquery.bxslider.min.js"></script>
 	<script src="libs/jquery.maskedinput.min.js"></script>
-	<script src="libs/is.mobile.js"></script>
+<!--	<script src="libs/is.mobile.js"></script>
 	<script src="libs/jquery.form.js"></script>
-	<script src="libs/jquery.validate.js"></script>
+	<script src="libs/jquery.validate.js"></script>-->
 </head>
 <body>
-<form class="portable-test-wrapper contact-form" id="contactForm" method="POST" novalidate="novalidate">
+<form class="portable-test-wrapper contact-form" id="contactForm" method="POST" action="" autocomplete="off">
 	<!-- LOGO + TITLE START -->
 	<div class="header-line">
 		<div class="container">
@@ -110,7 +110,7 @@
 						<div class="pick-item__img">
 							<img src="img/s1-1.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step1" id="step1-1" value="Стамбул">
+						<input class="pick-item__input" type="radio" name="Город" id="step1-1" value="Стамбул">
 						<div class="pick-item__label">Стамбул</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -120,7 +120,7 @@
 						<div class="pick-item__img">
 							<img src="img/s1-2.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step1" id="step1-2" value="Анталия">
+						<input class="pick-item__input" type="radio" name="Город" id="step1-2" value="Анталия">
 						<div class="pick-item__label">Анталия</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -130,7 +130,7 @@
 						<div class="pick-item__img">
 							<img src="img/s1-3.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step1" id="step1-3" value="Аланья">
+						<input class="pick-item__input" type="radio" name="Город" id="step1-3" value="Аланья">
 						<div class="pick-item__label">Аланья</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -159,7 +159,7 @@
 						<div class="pick-item__img">
 							<img src="img/s2-1.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step2" id="step2-1" value="Инвестирование">
+						<input class="pick-item__input" type="radio" name="Цель" id="step2-1" value="Инвестирование">
 						<div class="pick-item__label">Инвестирование</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -169,7 +169,7 @@
 						<div class="pick-item__img">
 							<img src="img/s2-2.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step2" id="step2-2" value="Для проживания">
+						<input class="pick-item__input" type="radio" name="Цель" id="step2-2" value="Для проживания">
 						<div class="pick-item__label">Для проживания</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -179,7 +179,7 @@
 						<div class="pick-item__img">
 							<img src="img/s2-3.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step2" id="step2-3" value="Временное пребывание и отдых">
+						<input class="pick-item__input" type="radio" name="Цель" id="step2-3" value="Временное пребывание и отдых">
 						<div class="pick-item__label">Временное пребывание и отдых</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -201,7 +201,7 @@
 						<div class="pick-item__img">
 							<img src="img/s3-1.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step3" id="step3-1" value="Квартира/Апартаменты">
+						<input class="pick-item__input" type="radio" name="Тип недвижимости" id="step3-1" value="Квартира/Апартаменты">
 						<div class="pick-item__label">Квартира/Апартаменты</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -211,7 +211,7 @@
 						<div class="pick-item__img">
 							<img src="img/s3-2.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step3" id="step3-2" value="Вилла/Пентхаус">
+						<input class="pick-item__input" type="radio" name="Тип недвижимости" id="step3-2" value="Вилла/Пентхаус">
 						<div class="pick-item__label">Вилла/Пентхаус</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -221,7 +221,7 @@
 						<div class="pick-item__img">
 							<img src="img/s3-3.jpg" alt="item">
 						</div>
-						<input class="pick-item__input" type="radio" name="step3" id="step3-3" value="Коммерческая недвижимость">
+						<input class="pick-item__input" type="radio" name="Тип недвижимости" id="step3-3" value="Коммерческая недвижимость">
 						<div class="pick-item__label">Коммерческая недвижимость</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -241,21 +241,21 @@
 				<div class="step-slide__grid">
 					<!-- ONE-ITEM START -->
 					<label for="step4-1" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step4" id="step4-1" value="1 спальня">
+						<input class="pick-item__input" type="radio" name="Количество комнат" id="step4-1" value="1 спальня">
 						<div class="pick-item__label">1 спальня</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step4-2" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step4" id="step4-2" value="2 спальни">
+						<input class="pick-item__input" type="radio" name="Количество комнат" id="step4-2" value="2 спальни">
 						<div class="pick-item__label">2 спальни</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step4-3" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step4" id="step4-3" value="3 и более">
+						<input class="pick-item__input" type="radio" name="Количество комнат" id="step4-3" value="3 и более">
 						<div class="pick-item__label">3 и более</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -275,28 +275,28 @@
 				<div class="step-slide__grid">
 					<!-- ONE-ITEM START -->
 					<label for="step5-1" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step5" id="step5-1" value="До 70 000 евро">
+						<input class="pick-item__input" type="radio" name="Бюджет" id="step5-1" value="До 70 000 евро">
 						<div class="pick-item__label">До 70 000 евро</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step5-2" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step5" id="step5-2" value="70 000 - 100 000 евро">
+						<input class="pick-item__input" type="radio" name="Бюджет" id="step5-2" value="70 000 - 100 000 евро">
 						<div class="pick-item__label">70 000 - 100 000 евро</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step5-3" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step5" id="step5-3" value="100 000-200 000 евро">
+						<input class="pick-item__input" type="radio" name="Бюджет" id="step5-3" value="100 000-200 000 евро">
 						<div class="pick-item__label">100 000 - 200 000 евро</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step5-4" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step5" id="step5-4" value="Более 200 000 евро">
+						<input class="pick-item__input" type="radio" name="Бюджет" id="step5-4" value="Более 200 000 евро">
 						<div class="pick-item__label">Более 200 000 евро</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -315,28 +315,28 @@
 				<div class="step-slide__grid">
 					<!-- ONE-ITEM START -->
 					<label for="step6-1" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step6" id="step6-1" value="В ближайшее время">
+						<input class="pick-item__input" type="radio" name="Срок" id="step6-1" value="В ближайшее время">
 						<div class="pick-item__label">В ближайшее время</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step6-2" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step6" id="step6-2" value="3-6 мес">
+						<input class="pick-item__input" type="radio" name="Срок" id="step6-2" value="3-6 мес">
 						<div class="pick-item__label">3-6 мес</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step6-3" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step6" id="step6-3" value="6 мес - 1 год">
+						<input class="pick-item__input" type="radio" name="Срок" id="step6-3" value="6 мес - 1 год">
 						<div class="pick-item__label">6 мес - 1 год</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step6-4" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step6" id="step6-4" value="Более 1 года">
+						<input class="pick-item__input" type="radio" name="Срок" id="step6-4" value="Более 1 года">
 						<div class="pick-item__label">Более 1 года</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -354,28 +354,28 @@
 				<div class="step-slide__grid">
 					<!-- ONE-ITEM START -->
 					<label for="step7-1" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step7" id="step7-1" value="Я сейчас в Турции">
+						<input class="pick-item__input" type="radio" name="Дата приезда" id="step7-1" value="Я сейчас в Турции">
 						<div class="pick-item__label">Я сейчас в Турции</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step7-2" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step7" id="step7-2" value="Сразу как подберём подходящий вариант">
+						<input class="pick-item__input" type="radio" name="Дата приезда" id="step7-2" value="Сразу как подберём подходящий вариант">
 						<div class="pick-item__label">Сразу как подберём подходящий вариант</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step7-3" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step7" id="step7-3" value="Летом">
+						<input class="pick-item__input" type="radio" name="Дата приезда" id="step7-3" value="Летом">
 						<div class="pick-item__label">Летом</div>
 					</label>
 					<!-- ONE-ITEM END -->
 
 					<!-- ONE-ITEM START -->
 					<label for="step7-4" class="pick-item">
-						<input class="pick-item__input" type="radio" name="step7" id="step7-4" value="Пока не планирую">
+						<input class="pick-item__input" type="radio" name="Дата приезда" id="step7-4" value="Пока не планирую">
 						<div class="pick-item__label">Пока не планирую</div>
 					</label>
 					<!-- ONE-ITEM END -->
@@ -394,11 +394,17 @@
 					<h4 class="step-slide__discount">+ гарантированный каталог</h4>
 					<div class="last-step-form">
 						<label class="last-step-form__label">Введите номер телефона и мы отправим вам СМС с ссылкой на каталог</label>
-						<input class="last-step-form__input contact-form__input_name" type="text" name="name" placeholder="Введите Ваше имя">
-						<input class="last-step-form__input contact-form__input_tel" type="tel" name="tel" placeholder="Введите Ваш номер">
+						<input class="last-step-form__input contact-form__input_name" type="text" name="Имя" placeholder="Введите Ваше имя" required>
+						<input class="last-step-form__input contact-form__input_tel" type="tel" name="Телефон" placeholder="Введите Ваш номер" required>
+						<div class="contact-form__preloader"></div>
+						<fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+							<label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+							<input id="honeypot" type="text" name="honeypot" value="">
+						</fieldset>
 						<button class="last-step-form__button btn-shine contact-form__button" type="submit" onclick="yaCounter47313057.reachGoal('GOOD'); return true;">
 							<span>получить каталог</span>
 						</button>
+						<div class="contact-form__description"></div>
 						<div class="last-step-form__accept">Нажимая на кнопку, вы принимаете <a href="privacy.html" target="_blank">Положение и Согласие</a> на обработку персональных данных.</div>
 					</div>
 				</div>
