@@ -120,25 +120,4 @@ $(document).ready(function() {
 		$('.btn-next').addClass('btn-next_active btn-shine');
 	});
 
-
-
-	/*$('form').each(function(index, el) {
-		$(el).validate({
-			rules:{
-				"name":{ required:true },
-				"tel":{ required:true }
-			},
-			/!*submitHandler: function(form){
-				$(form).ajaxSubmit({
-					type: 'POST',
-					url: './mail/php/mail.php',
-					success: function() {
-						testSlider.goToSlide( $('.step-slide').length - 1 );
-						$('.header-line').slideUp(300);
-						$('.progress-line').slideUp(300);
-					}
-				});
-			}*!/
-		});
-	});*/
 });
